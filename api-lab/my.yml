@@ -1,0 +1,23 @@
+info:
+  name: my
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{url}}/bids/my"
+  params:
+    - name: url
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NjEwODQxMTYsInVzZXJuYW1lIjoic3VwZXJzdXNzIiwiaWF0IjoxNzkwNzYxMDg0LCJleHAiOjE3OTA4NDc0ODR9.Sz4drjEB5R28bAeo72FBpD2pNQo9TCD4sSKL0x1bK2Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: api-lab
+config:
+  proxy:
+    inherit: false
+    config:
+      protocol: http
+      hostname: 10.0.55.52
+      port: 3128
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NjEwODQxMTYsInVzZXJuYW1lIjoic3VwZXJzdXNzIiwiaWF0IjoxNzkwNzYxMDg0LCJleHAiOjE3OTA4NDc0ODR9.Sz4drjEB5R28bAeo72FBpD2pNQo9TCD4sSKL0x1bK2Y
+  variables:
+    - name: url
+      value: https://api.kitek-pg.ru/api/marketplace
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
